@@ -20,7 +20,7 @@ define Package/blitzortung
   URL:=https://github.com/Elwell/blitzortung/
 endef
 
-define Package/bridge/description
+define Package/blitzortung/description
  Blitzortung lightning tracker utility
 endef
 
@@ -28,7 +28,7 @@ define Build/Configure
   $(call Build/Configure/Default,--with-linux-headers=$(LINUX_DIR))
 endef
 
-define Package/bridge/install
+define Package/blitzortung/install
         $(INSTALL_DIR) $(1)/usr/sbin
         $(INSTALL_BIN) $(PKG_BUILD_DIR)/tracker_Linux $(1)/usr/sbin/
 endef
