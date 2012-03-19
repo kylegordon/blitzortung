@@ -33,4 +33,4 @@ define Package/bridge/install
         $(INSTALL_BIN) $(PKG_BUILD_DIR)/tracker_Linux $(1)/usr/sbin/
 endef
 
-$(eval $(call BuildPackage,bridge))
+$(eval $(call BuildPackage,blitzortung))
